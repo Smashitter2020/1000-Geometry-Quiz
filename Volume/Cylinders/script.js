@@ -13,11 +13,11 @@ function generateQuestion() {
 }
 
 function checkAnswer() {
-  const userAnswer = parseInt(document.getElementById("answer").value);
+  const userAnswer = parseFloat(document.getElementById("answer").value);
   const correctAnswer = Math.PI * Math.pow(radius, 2) * height;
   currentQuestion++;
 
-  if (userAnswer === correctAnswer) {
+  if (Math.abs(userAnswer - correctAnswer) < 0.01) {
     score++;
   }
 
