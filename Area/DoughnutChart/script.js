@@ -13,7 +13,7 @@ function generateQuestion() {
     innerRadius--;
   }
 
-  document.getElementById("question").innerHTML = `<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>=</mo><mn>${outerRadius}</mn><mo>,</mo><mi>r</mi><mo>=</mo><mn>${innerRadius}</mn><mo>,<mi>&#x3b8;</mi><mo>=</mo><mn>${angle}</mn></math>`;
+  document.getElementById("question").innerHTML = `<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>=</mo><mn>${outerRadius}</mn><mo>,</mo><mi>r</mi><mo>=</mo><mn>${innerRadius}</mn><mo>,</mo><mi>&#x3b8;</mi><mo>=</mo><mn>${angle}</mn></math>`;
   document.getElementById("answer").value = "";
   document.getElementById("currentQuestion").innerText = currentQuestion + " out of " + maxQuestions + " questions";
 }
